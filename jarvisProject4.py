@@ -35,14 +35,14 @@ primeiro = 1
 vertexai.init(project="vxgva1", location="us-central1")
 model = genai.GenerativeModel("gemini-pro")
 chat = model.start_chat()
-
-os.environ["GOOGLE_API_KEY"] = "AIzaSyDxAbYdnjk3lmyTrcWeQ4QZoBnhvTusKzA"
+key = ""
+os.environ["GOOGLE_API_KEY"] = key
 
 
 from openai import OpenAI
 
-client = OpenAI(api_key="AIzaSyDxAbYdnjk3lmyTrcWeQ4QZoBnhvTusKzA")
-genai.configure(api_key="AIzaSyDxAbYdnjk3lmyTrcWeQ4QZoBnhvTusKzA")
+client = OpenAI(api_key=key)
+genai.configure(api_key=key)
 
 pygame.mixer.init()
 
